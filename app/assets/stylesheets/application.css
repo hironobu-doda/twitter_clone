@@ -1,12 +1,27 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* フッタと同じ高さに設定 */
+  margin-bottom: 50px;
+
+  /* 一番下までスクロールした時の余白 */
+  padding-bottom: 30px;
+}
+
 header {
   background-color: #F5B4B3;
   height: 50px;
-  width: 100%
+  width: 100%;
 }
 
 footer {
   background-color: #F5B4B3;
   color: #fff;
   height: 50px;
-  width: 100%
+  width: 100%;
+  bottom: 0;
+  position: absolute;
 }
