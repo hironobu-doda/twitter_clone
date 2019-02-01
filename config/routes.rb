@@ -4,7 +4,7 @@ root 'twitters#top'
   resources :twitters do
     collection do
       post :confirm
-      get :top
+      #get :top
     end
   end
 end

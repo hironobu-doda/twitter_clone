@@ -6,6 +6,7 @@ before_action :set_twitter, only: [:show, :edit, :update, :destroy]
 
   def index
     @twitters = Twitter.all
+    #render 'index'
   end
 
   def new
@@ -50,7 +51,7 @@ before_action :set_twitter, only: [:show, :edit, :update, :destroy]
   end
 
   private
-  
+
   def twitter_params
     params.require(:twitter).permit(:content)
   end
